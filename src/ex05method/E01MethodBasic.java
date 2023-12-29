@@ -11,8 +11,8 @@ import java.util.Scanner;
 -반환값이 없는 void형 메서드도 실행이 완료되면 호출한 위치로 실행의 
 흐름이 돌아온다. 
  */
-public class E01MethodBasic 
-{
+public class E01MethodBasic   
+{/* github 연동 완료 */
 	/*
 	메서드1 : 반환값O, 매개변수O 형태
 	=> 매개변수로 2개의 정수를 전달받아 합의 결과를 반환한다. 
