@@ -53,7 +53,7 @@ class FruitBuyer3{
 public class E06FruitSalesMain3 {
 	
 	public static void main(String[] args) {
-	
+		
 		/*
 		생성자를 사용해서 인스턴스를 생성하면 아래와 같이 생성과 동시에
 		초기화까지 할수있다. 따라서 초기화 메서드를 사용하는것보다 적은
@@ -62,7 +62,7 @@ public class E06FruitSalesMain3 {
 		FruitSeller3 seller1 = new FruitSeller3(0, 100, 1000);		
 		FruitSeller3 seller2 = new FruitSeller3(0, 80, 500);		
 		FruitBuyer3 buyer = new FruitBuyer3(10000, 0);
-
+		
 		System.out.println("구매행위가 일어나기전의 상태");
 		seller1.showSaleResult();
 		seller2.showSaleResult();
