@@ -40,8 +40,8 @@ class BusinessMan extends Man {
 	 */
 	public BusinessMan(String name, String company, String position) {
 		//부모클래스의 매개변수 1개인 생성자를 호출한다. 
-		super(name);
 		//남은 2개를 통해 자식쪽의 멤버변수를 초기화한다. 
+		super(name);
 		this.company = company;
 		this.position = position;
 		System.out.println("BusinessMan 생성자 호출");
