@@ -1,4 +1,4 @@
-package ex12inheritance;
+package ex15usefulclass;
 
 class Person extends Object {
 	String name;
@@ -15,6 +15,6 @@ class Person extends Object {
 	}
 }
 
-public class Test5 {
+public class Test1 {
 
 }

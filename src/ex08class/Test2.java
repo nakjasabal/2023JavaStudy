@@ -1,4 +1,4 @@
-package test;
+package ex08class;
 
 class X {
 	public X() {
@@ -14,7 +14,7 @@ class Y extends X {
 		System.out.println("Y의생성자");
 	}
 }
-public class Test4 {
+public class Test2 {
 	public static void main(String[] args) {
 		Y y = new Y();
 	}

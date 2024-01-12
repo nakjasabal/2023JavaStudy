@@ -1,4 +1,4 @@
-package test;
+package ex08class;
 //클래스(붕어빵틀) 추상화
 class Computer {
 	//멤버변수(속성)
@@ -22,11 +22,9 @@ class Computer {
 		RAM = r;
 		products = p;
 	}
-	
-	
 }
 
-public class Test2 {
+public class Test1 {
 	public static void main(String[] args) {		
 		Computer com1 = new Computer();
 		com1.products = "삼성전자 Sens";

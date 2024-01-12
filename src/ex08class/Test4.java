@@ -1,17 +1,17 @@
-package ex12inheritance;
+package ex08class;
 
-public class Test3 {
+public class Test4 {
 	//보통의 경우 멤버변수의 접근지정자는 private으로 선언한다. 
 	private int age;
 	private String name;
 	private boolean isMarried;
 	//생성자(디폴트생성자 및 인수생성자)
-	public Test3() {}
-	public Test3(int age, String name) {
+	public Test4() {}
+	public Test4(int age, String name) {
 		this.age = age;
 		this.name = name;
 	}
-	public Test3(int age, String name, boolean isMarried) {
+	public Test4(int age, String name, boolean isMarried) {
 		this.age = age;
 		this.name = name;
 		this.isMarried = isMarried;

@@ -1,11 +1,11 @@
-package test;
+package ex11static;
 
 class MyClass {
 	static void bFunc() {
 		System.out.println("b가 호출됨");
 	}
 }
-public class Test5 {	
+public class Test2 {	
 	static void aFunc() {
 		System.out.println("a가 호출됨");
 	}	

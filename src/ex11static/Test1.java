@@ -1,4 +1,4 @@
-package test;
+package ex11static;
 
 class AA {
 	public AA() {
@@ -11,7 +11,7 @@ class AA {
 		System.out.println("나는 B입니다.");
 	}
 }
-public class Test3 {
+public class Test1 {
 	public static void main(String[] args) {
 		AA aa = new AA();
 		aa.aFunc();
