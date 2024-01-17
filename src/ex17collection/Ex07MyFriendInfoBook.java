@@ -73,7 +73,7 @@ class UnivFriend extends Friend	{
 
 //메인클래스 
 public class Ex07MyFriendInfoBook {
-	
+
 	public static void menuShow() {
 		System.out.println("######## 메뉴를 입력하세요 ########");
 		System.out.print("1.고딩친구입력 ");
@@ -254,15 +254,25 @@ class FriendInfoHandler {
 		기능을 구현하시오. 
 	 */
 	public void searchInfo() {	
+		//검색한 이름이 있는지 확인용
 		boolean isFind = false;		
+		//스캐너 인스턴스 생성 
 		Scanner scan = new Scanner(System.in);
 		System.out.print("검색할 이름을 입력하세요:");
-		String searchName = scan.nextLine();		
+		String searchName = scan.nextLine();	
 		
+		//size()를 통해 컬렉션에 저장된 인스턴스의 갯수만큼 반복 
 		for(int i=0 ; i<lists.size() ; i++) {
-			if(searchName.equals(lists.get(i).name)) {
+			/* i번째 인덱스의 인스턴스를 접근한 후 name을 얻어온다. 
+			이를 통해 입력한 이름과 동일한지 확인한다. */
+			//equals()를 통한 문자열 비교
+//			if(searchName.equals(lists.get(i).name)) {
+			//compareTo()를 통한 문자열 비교 
+			if(searchName.compareTo(lists.get(i).name)==0) {
+				//이름이 일치하면 정보를 출력한다. 
 				lists.get(i).showAllData();
 				System.out.println("**귀하가 요청하는 정보를 찾았습니다.**");
+				//확인용 변수는 true로 변경 
 				isFind = true;
 			}
 		}
@@ -270,18 +280,29 @@ class FriendInfoHandler {
 			System.out.println("**찾는 정보가 없습니다.**"); 
 	}
 	public void deleteInfo() {	
-		boolean isFind = false;		
+		//검색 확인용 변수
+		boolean isFind = false;
+		//스캐너 인스턴스 생성 
 		Scanner scan = new Scanner(System.in);
 		System.out.print("삭제할 이름을 입력하세요:");
 		String deleteName = scan.nextLine();
 		
+		/*
+		List컬렉션에 저장된 인스턴스를 기반으로 Iterator인스턴스를 
+		생성한다. 이때 타입매개변수는 List와 동일하게 정의하면된다. 
+		 */
 		Iterator<Friend> itr = lists.iterator();
+		//저장된 인스턴스의 갯수(컬렉션의 크기)만큼 반복한다. 
 		while(itr.hasNext()) {
+			//컬렉션에 저장된 참조값을 순서대로 인출한다. 
 			Friend fr = itr.next();
+			//인스턴스의 이름과 삭제할 이름을 비교한다. 
 			if(deleteName.equals(fr.name)) {
+				//일치하면 삭제한다. 
 				lists.remove(fr);
 				isFind = true;
 				System.out.println("**귀하가 요청하는 정보를 삭제했습니다.**");
+				//삭제에 성공했다면 즉시 반복문을 탈출한다. 
 				break;
 			}
 		}
