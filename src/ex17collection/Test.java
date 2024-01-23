@@ -2,7 +2,7 @@ package ex17collection;
 
 import java.util.Objects;
 
-class A {
+class X {
 	int a;
 	String b;
 	
@@ -19,7 +19,7 @@ class A {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		A other = (A) obj;
+		X other = (X) obj;
 		return a == other.a && Objects.equals(b, other.b);
 	}
 	
