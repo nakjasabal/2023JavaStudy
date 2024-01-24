@@ -48,13 +48,17 @@ public class Test2 {
 		기준2 : 이름만 동일하면 동일한 객체로 판단(계좌관리와 동일)  
 		 */
 		boolean b1 = aSet.add(new B("홍길동", 10));
-		System.out.println(b1);
+		System.out.println("b1="+b1);
+		
+		//System.out.println("길동10="+aSet.contains(new B("홍길동", 10)));
+		//System.out.println("길동20="+aSet.contains(new B("홍길동", 20)));
+				
 		/*
 		기준1 일때는 입력성공
 		기준2 일때는 입력실패
 		 */
 		boolean b2 = aSet.add(new B("홍길동", 20));
-		System.out.println(b2);
+		System.out.println("b2="+b2);
 		
 		/*
 		기준2 일때는 홍길동10과 홍길동20은 동일한 인스턴스이므로
