@@ -19,10 +19,12 @@ class B extends A {
 	@Override
 	public int hashCode() {
 		/* + this.age*/
+		System.out.println("hashCode호츌됨?");
 		return super.name.hashCode(); 
 	}	
 	@Override
 	public boolean equals(Object obj) {
+		System.out.println("equals호츌됨?");
 		B aObj = (B) obj;
 		/*aObj.age==this.age &&*/
 		if(aObj.name.equals(super.name)) {
